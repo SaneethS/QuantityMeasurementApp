@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/metrics"
+        android:layout_width="117dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="46dp"
+        android:entries="@array/measurements"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/metric1"
+        android:layout_width="151dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="89dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/metrics" />
+
+    <EditText
+        android:id="@+id/metric2"
+        android:layout_width="151dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/metrics" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="24dp"
+        android:text="="
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/metric2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/metric1"
+        app:layout_constraintTop_toBottomOf="@+id/metrics" />
+</androidx.constraintlayout.widget.ConstraintLayout>

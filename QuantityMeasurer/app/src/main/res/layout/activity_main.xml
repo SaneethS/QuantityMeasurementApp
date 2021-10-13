@@ -5,7 +5,7 @@
     android:id="@+id/MeasurementPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/DarkRed"
+    android:background="@color/LightPink"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,8 +15,8 @@
         android:layout_marginTop="100sp"
         android:fontFamily="cursive"
         android:text="@string/quantity_measurement"
-        android:textColor="@color/LightGrey"
-        android:textSize="30sp"
+        android:textColor="@color/DarkRed"
+        android:textSize="40sp"
         android:textStyle="bold|italic"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -27,14 +27,12 @@
         android:id="@+id/convertingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="59dp"
         android:layout_marginTop="56dp"
-        android:layout_marginEnd="28dp"
-        android:backgroundTint="@color/LightGrey"
+        android:backgroundTint="@color/LightGreen"
         android:text="@string/converting_measurement"
         android:textColor="@color/DarkRed"
         android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/addingButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -43,8 +41,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/LightGrey"
+        android:layout_marginEnd="79dp"
+        android:backgroundTint="@color/Yellow"
         android:text="@string/adding_measurement"
         android:textColor="@color/DarkRed"
         android:textSize="12sp"
@@ -52,6 +50,11 @@
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_convert"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertingButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,12 +3,27 @@ package com.yml.quantitymeasurer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.i("MainActivity","Process Created")
+        val convert = findViewById<Button>(R.id.convertingButton) as Button
+
+        convert.setOnClickListener {
+            switchFragment(ConvertFragment())
+        }
+
+    }
+
+    private fun switchFragment(fragment: Fragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_container_convert,fragment)
+        fragmentTransaction.commit()
     }
 
     override fun onStart() {
