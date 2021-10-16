@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="measurements">
+        <item>Length</item>
+        <item>Weight</item>
+        <item>Volume</item>
+        <item>Temperature</item>
+    </string-array>
+    <string-array name="lengthMeasurement">
+        <item>cm</item>
+        <item>m</item>
+        <item>km</item>
+    </string-array>
+    <string-array name="weightMeasurement">
+        <item>g</item>
+        <item>kg</item>
+        <item>ton</item>
+    </string-array>
+    <string-array name="volumeMeasurement">
+        <item>ml</item>
+        <item>l</item>
+        <item>gallon</item>
+    </string-array>
+    <string-array name="temperatureMeasurement">
+        <item>C</item>
+        <item>F</item>
+        <item>K</item>
+    </string-array>
+</resources>

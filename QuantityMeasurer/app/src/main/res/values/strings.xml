@@ -3,10 +3,4 @@
     <string name="quantity_measurement">Quantity Measurement</string>
     <string name="converting_measurement">Converting</string>
     <string name="adding_measurement">Adding</string>
-    <string-array name="measurements">
-        <item>Length</item>
-        <item>Weight</item>
-        <item>Volume</item>
-        <item>Temperature</item>
-    </string-array>
 </resources>

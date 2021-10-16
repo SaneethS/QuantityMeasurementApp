@@ -12,9 +12,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.i("MainActivity","Process Created")
         val convert = findViewById<Button>(R.id.convertingButton) as Button
+        val add = findViewById<Button>(R.id.addingButton)
 
         convert.setOnClickListener {
             switchFragment(ConvertFragment())
+        }
+
+        add.setOnClickListener {
+            switchFragment(AddFragment())
         }
 
     }
