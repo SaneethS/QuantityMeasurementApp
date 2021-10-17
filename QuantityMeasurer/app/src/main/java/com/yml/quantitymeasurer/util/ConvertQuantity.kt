@@ -11,6 +11,12 @@ object ConvertQuantity {
         }
     }
 
+    fun add(value1: Float, value2: Float, mainQuantity: String, quantity1: String, quantity2: String, quantityResult: String):Float{
+        var metric1 = convert(value1, mainQuantity, quantity1, quantityResult)
+        var metric2 = convert(value2, mainQuantity, quantity2, quantityResult)
+        return metric1 + metric2
+    }
+
     private fun convertTemperature(value: Float, fromQuantity: String, toQuantity: String): Float {
         return when(fromQuantity){
             "C" -> convertC(value,toQuantity)
