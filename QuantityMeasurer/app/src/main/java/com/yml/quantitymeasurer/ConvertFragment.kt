@@ -6,11 +6,10 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Spinner
 import androidx.fragment.app.Fragment
 import com.yml.quantitymeasurer.databinding.ConvertFragmentBinding
 import com.yml.quantitymeasurer.util.ChosenQuantity.chosenQuantity
-import com.yml.quantitymeasurer.util.ConvertQuantity
+import com.yml.quantitymeasurer.logic.ConvertQuantity
 
 class ConvertFragment: Fragment(R.layout.convert_fragment) {
     lateinit var binding: ConvertFragmentBinding
@@ -24,6 +23,7 @@ class ConvertFragment: Fragment(R.layout.convert_fragment) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = ConvertFragmentBinding.bind(view)
+//        binding.metric1.setText(0)
 
         var arrayAdapter = ArrayAdapter.createFromResource(requireContext(),R.array.measurements,android.R.layout.simple_spinner_item)
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -84,6 +84,7 @@ class ConvertFragment: Fragment(R.layout.convert_fragment) {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                if(s.isNullOrEmpty()){
                    value = 0f
+                   convertValue()
                    return
                }
                 value = s.toString().toFloat()

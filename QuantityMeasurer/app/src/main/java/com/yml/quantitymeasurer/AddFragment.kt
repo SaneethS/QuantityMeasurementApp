@@ -6,12 +6,10 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Spinner
 import androidx.fragment.app.Fragment
 import com.yml.quantitymeasurer.databinding.AddFragmentBinding
-import com.yml.quantitymeasurer.databinding.ConvertFragmentBinding
 import com.yml.quantitymeasurer.util.ChosenQuantity
-import com.yml.quantitymeasurer.util.ConvertQuantity
+import com.yml.quantitymeasurer.logic.ConvertQuantity
 
 class AddFragment: Fragment(R.layout.add_fragment) {
     private lateinit var binding: AddFragmentBinding

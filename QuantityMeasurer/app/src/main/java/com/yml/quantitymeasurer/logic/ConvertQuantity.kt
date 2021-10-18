@@ -1,4 +1,4 @@
-package com.yml.quantitymeasurer.util
+package com.yml.quantitymeasurer.logic
 
 object ConvertQuantity {
     fun convert(value: Float, mainQuantity: String, fromQuantity: String, toQuantity: String):Float {
