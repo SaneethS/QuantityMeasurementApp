@@ -5,7 +5,7 @@
     android:id="@+id/MeasurementPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/LightPink"
+    android:background="@color/LightSkyBlue"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,7 +15,7 @@
         android:layout_marginTop="100sp"
         android:fontFamily="cursive"
         android:text="@string/quantity_measurement"
-        android:textColor="@color/DarkRed"
+        android:textColor="@color/Blue"
         android:textSize="40sp"
         android:textStyle="bold|italic"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -29,9 +29,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
-        android:backgroundTint="@color/LightGreen"
+        android:backgroundTint="@color/Red"
         android:text="@string/converting_measurement"
-        android:textColor="@color/DarkRed"
+        android:textColor="@color/White"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
@@ -42,9 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="28dp"
-        android:backgroundTint="@color/Yellow"
+        android:backgroundTint="@color/Red"
         android:text="@string/adding_measurement"
-        android:textColor="@color/DarkRed"
+        android:textColor="@color/White"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />

@@ -1,5 +1,6 @@
 package com.yml.quantitymeasurer
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -13,13 +14,19 @@ class MainActivity : AppCompatActivity() {
         Log.i("MainActivity","Process Created")
         val convert = findViewById<Button>(R.id.convertingButton) as Button
         val add = findViewById<Button>(R.id.addingButton)
+        switchFragment(ConvertFragment())
+        convert.setBackgroundColor(Color.BLUE)
 
         convert.setOnClickListener {
             switchFragment(ConvertFragment())
+            convert.setBackgroundColor(Color.BLUE)
+            add.setBackgroundColor(Color.RED)
         }
 
         add.setOnClickListener {
             switchFragment(AddFragment())
+            add.setBackgroundColor(Color.BLUE)
+            convert.setBackgroundColor(Color.RED)
         }
 
     }

@@ -82,12 +82,11 @@ class ConvertFragment: Fragment(R.layout.convert_fragment) {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-               if(s.isNullOrEmpty()){
-                   value = 0f
-                   convertValue()
-                   return
-               }
-                value = s.toString().toFloat()
+
+                value = if(!s.isNullOrEmpty())
+                            s.toString().toFloat()
+                        else
+                            Float.MAX_VALUE
                 convertValue()
             }
 

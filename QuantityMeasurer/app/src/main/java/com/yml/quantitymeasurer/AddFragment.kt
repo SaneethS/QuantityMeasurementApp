@@ -18,8 +18,8 @@ class AddFragment: Fragment(R.layout.add_fragment) {
         private var userQuantity1:String = "cm"
         private var userQuantity2:String = "cm"
         private var resultQuantity: String = "cm"
-        private var value1: Float = 0f
-        private var value2: Float = 0f
+        private var value1: Float = Float.MAX_VALUE
+        private var value2: Float = Float.MAX_VALUE
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -75,9 +75,7 @@ class AddFragment: Fragment(R.layout.add_fragment) {
                 addValue()
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-
-            }
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
 
         binding.spinnerTotal.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
@@ -91,50 +89,37 @@ class AddFragment: Fragment(R.layout.add_fragment) {
                 addValue()
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-
-            }
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
 
         }
 
         binding.metricAdd1.addTextChangedListener(object : TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-
-            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if(s.isNullOrEmpty()){
-                    value1 = 0f
-                    return
-                }
-                value1 = s.toString().toFloat()
+                value1 = if(!s.isNullOrEmpty())
+                            s.toString().toFloat()
+                        else
+                            Float.MAX_VALUE
                 addValue()
             }
 
-            override fun afterTextChanged(s: Editable?) {
-
-            }
+            override fun afterTextChanged(s: Editable?) {}
 
         })
 
         binding.metricAdd2.addTextChangedListener(object : TextWatcher{
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-
-            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if(s.isNullOrEmpty()){
-                    value2 = 0f
-                    return
-                }
-                value2 = s.toString().toFloat()
+                value2 = if(!s.isNullOrEmpty())
+                            s.toString().toFloat()
+                        else
+                            Float.MAX_VALUE
                 addValue()
             }
 
-            override fun afterTextChanged(s: Editable?) {
-
-            }
-
+            override fun afterTextChanged(s: Editable?) {}
         })
     }
 
@@ -149,7 +134,6 @@ class AddFragment: Fragment(R.layout.add_fragment) {
         binding.spinnerAdd1.adapter = choice
         binding.spinnerAdd2.adapter = choice
         binding.spinnerTotal.adapter = choice
-
     }
 
 }

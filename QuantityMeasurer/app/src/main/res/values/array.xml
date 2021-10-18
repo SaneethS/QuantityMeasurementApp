@@ -22,8 +22,8 @@
         <item>gallon</item>
     </string-array>
     <string-array name="temperatureMeasurement">
-        <item>C</item>
-        <item>F</item>
-        <item>K</item>
+        <item>Cel</item>
+        <item>Far</item>
+        <item>Kel</item>
     </string-array>
 </resources>

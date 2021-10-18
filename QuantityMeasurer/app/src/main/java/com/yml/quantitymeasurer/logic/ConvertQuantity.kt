@@ -2,6 +2,7 @@ package com.yml.quantitymeasurer.logic
 
 object ConvertQuantity {
     fun convert(value: Float, mainQuantity: String, fromQuantity: String, toQuantity: String):Float {
+        if(value == Float.MAX_VALUE) return 0f
         return when(mainQuantity){
             "Length" -> convertLength(value,fromQuantity,toQuantity)
             "Weight" -> convertWeight(value,fromQuantity,toQuantity)
