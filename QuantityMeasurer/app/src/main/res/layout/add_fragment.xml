@@ -7,13 +7,14 @@
 
     <Spinner
         android:id="@+id/spinnerTotal"
-        android:layout_width="130dp"
-        android:layout_height="32dp"
+        android:layout_width="137dp"
+        android:layout_height="39dp"
         android:layout_marginStart="133dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="148dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@android:drawable/btn_dropdown"
         android:backgroundTint="@color/LightCyan"
+        android:backgroundTintMode="multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,13 +22,14 @@
 
     <Spinner
         android:id="@+id/spinnerAdd2"
-        android:layout_width="130dp"
-        android:layout_height="32dp"
+        android:layout_width="133dp"
+        android:layout_height="42dp"
         android:layout_marginStart="87dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="47dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@android:drawable/btn_dropdown"
         android:backgroundTint="@color/LightCyan"
+        android:backgroundTintMode="multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/spinnerAdd1"
@@ -60,13 +62,14 @@
 
     <Spinner
         android:id="@+id/spinnerAdd"
-        android:layout_width="131dp"
-        android:layout_height="34dp"
+        android:layout_width="136dp"
+        android:layout_height="41dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="265dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@android:drawable/btn_dropdown"
         android:backgroundTint="@color/LightCyan"
+        android:backgroundTintMode="multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,12 +102,13 @@
 
     <Spinner
         android:id="@+id/spinnerAdd1"
-        android:layout_width="130dp"
-        android:layout_height="32dp"
+        android:layout_width="135dp"
+        android:layout_height="41dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@android:drawable/btn_dropdown"
         android:backgroundTint="@color/LightCyan"
+        android:backgroundTintMode="multiply"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/metricAdd1" />
 

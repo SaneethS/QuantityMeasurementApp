@@ -8,22 +8,24 @@
     <Spinner
         android:id="@+id/spinnerLConvert"
         android:layout_width="150dp"
-        android:layout_height="35dp"
+        android:layout_height="41dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@android:drawable/btn_dropdown"
         android:backgroundTint="@color/LightCyan"
+        android:backgroundTintMode="multiply"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/metric1" />
 
     <Spinner
         android:id="@+id/metrics"
-        android:layout_width="117dp"
+        android:layout_width="150dp"
         android:layout_height="48dp"
         android:layout_marginStart="29dp"
         android:layout_marginTop="46dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@android:drawable/btn_dropdown"
         android:backgroundTint="@color/LightCyan"
+        android:backgroundTintMode="multiply"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,12 +69,13 @@
     <Spinner
         android:id="@+id/spinnerRConvert"
         android:layout_width="150dp"
-        android:layout_height="35dp"
+        android:layout_height="41dp"
         android:layout_marginStart="66dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="25dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@android:drawable/btn_dropdown"
         android:backgroundTint="@color/LightCyan"
+        android:backgroundTintMode="multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spinnerLConvert"
         app:layout_constraintTop_toBottomOf="@+id/metric2" />
